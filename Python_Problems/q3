@@ -10,5 +10,4 @@ while d * d <= temp:
 if temp > 1:
     factors.append(temp)
 
-print("Prime factors:", factors)
 print("Largest prime factor:", max(factors))
