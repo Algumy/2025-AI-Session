@@ -1,0 +1,14 @@
+n = 600851475143
+temp = n
+factors = []
+d = 2
+while d * d <= temp:
+    while temp % d == 0:
+        factors.append(d)
+        temp //= d
+    d += 1 if d == 2 else 2
+if temp > 1:
+    factors.append(temp)
+
+print("Prime factors:", factors)
+print("Largest prime factor:", max(factors))
